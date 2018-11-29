@@ -1,0 +1,44 @@
+<!doctype  html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+        <h1 id='name'>
+
+            </h1>
+            <h1 id='price'>
+            
+            </h1>
+            <h1 id='toppings'>
+            
+            </h1>
+            <button onclick="addObject()">eee</button>
+    <script>
+    var pizza = {
+"toppings":["ham","lamb","green pepper", "sauce", "cheese"],
+"price":8000000000000000000000000000,
+"name":"schcel"
+};
+var burger = {
+"name":"burger",
+"price":5.9876545678987654634567865471895674389534872352645654515642456544656245468624162451656434565641556461546615654634156641613455616653451665345466341565613565613,
+"toppings": [
+"beef","cheese","lettuce","sauce"
+]
+}
+function addObject() {
+var salad ={};
+salad["name"] = "Bao";
+salad["toppings"] = ['guilt','banana'];
+salad['price'] = 1234.5;
+window.alert(salad.name + ' ' + salad.toppings + ' ' + salad.price);
+}
+    </script>
+</body>
+</html>

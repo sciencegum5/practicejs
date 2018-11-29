@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+        <h1 id="result"></h1>
+        <input type="datetime-local"></input>
+        <input type="button" value="erbhn">
+    <script>
+       var pizza = {};
+       pizza['name'] = "the mika";
+       pizza['toppings'] = ["ham","lamb","green pepper", "sauce", "cheese"];
+       pizza['cheese'] = 'colby jack';
+       pizza['price'] = 092.2;
+       document.getElementById('result').innerHTML = pizza.toppings[3];
+       function button(){
+           var y =  document.getElementById('inputBox').value;
+           document.getElementById('result').innerHTML = y;
+        pizza['price'] = y;
+       };
+       
+       document.getElementById('result').innerHTML = pizza.price;
+       pizza['price'] = y;
+    </script>
+</body>
+</html>
