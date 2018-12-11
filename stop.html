@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+        <p id='para' onclick="yeet()">click me</p>
+    <script>
+        var light = false;
+      function yeet(){
+        if (light == false) {
+        document.getElementById('para').innerHTML = "stop";
+        light = true;
+      }
+      else {
+          light = false;
+          document.getElementById('para').innerHTML = "click me";
+      }};
+    </script>
+</body>
+</html>

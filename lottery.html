@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <style>
+    div {
+        width: 50vh;
+        height: 50vh;
+        background-color: rgba(201, 76, 76, 1);
+        cursor: url('eraser.cur'), default;}
+    </style>
+</head>
+<body>
+    <div id='scratchbox' onmouseover="scratchOff()">
+        w
+    </div>
+    <h1 id='textq'></h1>
+    <script>
+        var opacity = 1;
+        var comp = Math.floor((Math.random() * 5) + 1);
+        var ticket = Math.floor((Math.random() * 5) + 1);
+        function scratchOff() {
+            opacity -= 0.1;
+            console.log(opacity);
+            console.log(comp);
+            console.log(ticket);
+            document.getElementById("scratchbox").style.backgroundColor = "rgba(201, 76, 76, " + opacity + ")";
+            if (comp == ticket && opacity < 0.3){
+                document.getElementById("textq").innerHTML = "you win";
+
+            }
+            if (comp != ticket && opacity < 0.3) {
+                document.getElementById("textq").innerHTML = "you lose";
+
+            } 
+        }
+
+        </script>
+</body>
+</html>

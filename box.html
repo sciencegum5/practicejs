@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Page Title</title>
+   
+    <style>
+        #box {
+            width: 10vw;
+            height: 10vh;
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <h1 id='test'></h1>
+    <div id="box"></div>
+    <script>
+    var degrees = 0;
+    document.body.addEventListener('keypress', function(userChoice){
+    var key = userChoice.keyCode;
+    if (key == 100) {
+        degrees++;
+        document.getElementById('test').innerHTML = degrees;
+        document.getElementById('box').style.transform = 'rotate(' + degrees 
+        + 'deg)';
+        console.log(userChoice.keyCode);
+    }
+    else if (key == 101) {
+        degrees--;
+        document.getElementById('test').innerHTML = degrees;
+        document.getElementById('box').style.transform = 'rotate(' + degrees 
+        + 'deg)';
+        console.log(userChoice.keyCode);
+    }});
+
+    </script>
+</body>
+</html>
